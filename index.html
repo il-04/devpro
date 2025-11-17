@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Blog + Login</title>
+  <link rel="stylesheet" href="style.css"> <!-- external CSS -->
+</head>
+<body>
+  <h1>🌸 My Colorful Blog 🌸</h1>
+
+  <!-- Blog Cards -->
+  <div class="card">
+    <h3>Learning Embedded Systems</h3>
+    <p>How I started with Arduino and ESP32...</p>
+    <button onclick="openPost(1)">View</button>
+  </div>
+
+  <div class="card">
+    <h3>LoRa for IoT Projects</h3>
+    <p>Using LoRa for long-range communication in IoT...</p>
+    <button onclick="openPost(2)">View</button>
+  </div>
+
+  <div class="card">
+    <h3>Vehicle Simulation with SUMO</h3>
+    <p>How SUMO helps in simulating smart city traffic...</p>
+    <button onclick="openPost(3)">View</button>
+  </div>
+
+  <!-- Fullscreen Blog Modal -->
+  <div id="modal">
+    <button id="closeBtn" onclick="closePost()">Close ✖</button>
+    <div id="modalContent"></div>
+  </div>
+
+  <!-- Login Form -->
+  <form onsubmit="return false;">
+    <h3>🔑 Login</h3>
+    <input type="text" id="username" placeholder="Username" required>
+    <input type="password" id="password" placeholder="Password" required>
+    <button onclick="login()">Login</button>
+  </form>
+
+  <script src="script.js"></script> <!-- external JS -->
+</body>
+</html>
+  
+  
